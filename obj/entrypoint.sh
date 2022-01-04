@@ -7,3 +7,4 @@ while [ true ]; do
 done
 bash /app/stop.sh
 tail -f /opt/UniFi/logs/server.log
+exit
