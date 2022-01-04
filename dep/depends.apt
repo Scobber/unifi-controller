@@ -1,0 +1,5 @@
+ca-certificates
+openjdk-8-jdk
+apt-transport-https
+mongodb-server
+unzip
