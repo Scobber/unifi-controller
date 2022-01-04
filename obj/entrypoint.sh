@@ -1,7 +1,6 @@
 #!/bin/bash
-cd /opt/UniFi
-java -jar lib/ace.jar start & 
+bash start.sh &
 while [ true ]; do
     sleep 2
-    tail -f logs/server.log
+    tail -f /opt/UniFi/logs/server.log
 done
