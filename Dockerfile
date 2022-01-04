@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-VOLUME /var/lib/apt/lists /opt/UniFi/data/backup /opt/UniFi/data/db
+VOLUME /var/lib/apt/lists /opt/UniFi/data/backup /opt/UniFi/data /opt/UniFi/logs
 RUN mkdir -p /dep
 RUN mkdir -p /app
 COPY /dep /dep
