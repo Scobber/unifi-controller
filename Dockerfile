@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:focal
 VOLUME /var/lib/apt/lists /opt/UniFi/data/backup /opt/UniFi/data /opt/UniFi/logs
 RUN mkdir -p /dep
 RUN mkdir -p /app
