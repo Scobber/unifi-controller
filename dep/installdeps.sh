@@ -4,8 +4,8 @@ apt install -y software-properties-common curl wget gnupg gpg
 wget -qO - https://www.mongodb.org/static/pgp/server-3.6.asc |  apt-key add -
 echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.6 main" | tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 #curl -sSL https://dl.ui.com/unifi/unifi-repo.gpg -o /etc/apt/trusted.gpg.d/unifi-repo.gpg
-wget http://ftp.us.debian.org/debian/pool/main/g/glibc/multiarch-support_2.28-10_amd64.deb
-wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.9_amd64.deb
+wget http://security.debian.org/debian-security/pool/updates/main/g/glibc/multiarch-support_2.28-10+deb10u2_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
 #wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add -
 #add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 
