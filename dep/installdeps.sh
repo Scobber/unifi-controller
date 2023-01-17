@@ -10,8 +10,8 @@ wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n
 #add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 
 
-dpkg -i multiarch-support_2.28-10_amd64.deb
-dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.9_amd64.deb
+dpkg -i multiarch-support_2.28-10+deb10u2_amd64.deb
+dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
 rm *.deb
 
 apt update
