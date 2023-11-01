@@ -1,5 +1,9 @@
 ca-certificates
-openjdk-8-jdk
-apt-transport-https
-mongodb-server
 unzip
+openjdk-17-jre-headless
+libcap2
+logrotate
+binutils
+apt-transport-https
+mongodb-org-server
+nano
