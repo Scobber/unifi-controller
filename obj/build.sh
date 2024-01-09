@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo ln -s /run/systemd/journal/dev-log /dev/log
+#sudo ln -s /run/systemd/journal/dev-log /dev/log
 
 # this file is for any additional pipeline commands
 ls /app

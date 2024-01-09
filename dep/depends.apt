@@ -7,3 +7,4 @@ binutils
 apt-transport-https
 mongodb-org-server
 nano
+rsyslog
