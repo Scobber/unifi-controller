@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo ln -s /run/systemd/journal/dev-log /dev/log
+
 # this file is for any additional pipeline commands
 ls /app
 #curl -o /tmp/unifi.zip https://dl.ui.com/unifi/7.5.176-1136930355/UniFi.unix.zip
