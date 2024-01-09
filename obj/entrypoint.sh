@@ -63,7 +63,14 @@ is_not_running() {
 [ -z "$(pgrep -f ${BASEDIR}/lib/ace.jar)" ] && true || false
 }
 is_running() {
-[ -z "$(pgrep -f ${BASEDIR}/lib/ace.jar)" ] && false || true
+    RUNNING = [ -z "$(pgrep -f ${BASEDIR}/lib/ace.jar)" ]
+if [[RUNNING]]; then
+    echo "UNIFI IS RUNNING"
+    true;
+else
+    echo "UNIFI IS NOT RUNNING"
+    false;
+fi
 }
 log_progress_msg() {
     local PROGRESS
@@ -120,15 +127,17 @@ if is_not_running; then
     fi
     echo "Streaming Log File ${LOGDIR}/server.log"
     if test -f "${LOGDIR}/server.log"; then
-        tail -f ${LOGDIR}/server.log || break 2
+        tail -f ${LOGDIR}/server.log &
     fi
     while [[ !(is_running) ]]
     do
         echo "***PROCESS STILL EXECUTING***"
         sleep 1000
     done
-    else
-        log_progress_msg "(already running)"
-        log_end_msg 1
-    fi
+    exit 0
+else
+    log_progress_msg "(already running)"
+    log_end_msg 1
+fi
 sleep 1000
+exit 0
