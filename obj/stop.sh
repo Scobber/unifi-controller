@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /opt/UniFi
+cd /usr/lib/unifi
 java -jar lib/ace.jar stop
